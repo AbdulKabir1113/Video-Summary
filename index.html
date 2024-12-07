@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Summarizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <div class="nav-left">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="logo">
+        <h1>Video Summarizer</h1>
+      </div>
+      <div class="nav-right">
+        <a href="#signin">Sign In</a>
+        <a href="#signup">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+  
+  
+  
+
+  <!-- Intro Section Before Search Bar -->
+  <section class="intro-section">
+    <h2>Video Summarizer</h2>
+    <p>Efficiently summarize any video or audio content. Upload your local files or enter a video URL to get a brief summary of key points, helping you save time and focus on what's most important.</p>
+    <p>Start by entering a video URL or uploading your file, and get your summary in just a few clicks!</p>
+  </section>
+
+  <!-- Main Content Section -->
+  <div class="main-container">
+    <!-- Search Section -->
+    <section class="search-section">
+      <div class="search-bar-container">
+        <input type="text" placeholder="Enter video URL or upload video" id="video-input">
+        <button id="summarize-btn">Summarize</button>
+      </div>
+
+      <!-- Summary and Transcript Boxes -->
+      <div class="boxes-container">
+        <div class="summary-box" id="summary-box" style="display: none;">
+          <h3>Summary</h3>
+          <div class="loader" id="loader" style="display: none;"></div>
+          <p id="summary-text"></p>
+        </div>
+
+        <div class="transcript-box" id="transcript-box" style="display: none;">
+          <h3>Video Transcript</h3>
+          <p id="transcript-text"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <h2 class="features-headline">Use Cases for Different Roles</h2>
+      <p class="features-subheading">Made for students, researchers & YouTuber minds of all kinds.</p>
+      <div class="feature-box">
+        <div class="feature-img-container">
+          <img src="photos/Students.png" alt="Student" class="feature-img">
+        </div>
+        <h3>For Students</h3>
+        <p>Video Summarizer is a powerful tool for students who want to enhance their learning experience. It allows them to quickly obtain summaries of educational videos, saving time and helping to focus on key concepts. By providing concise, relevant summaries, students can better understand complex topics, revise efficiently, and improve overall study habits. Whether it's for lectures, tutorials, or learning resources, the Video Summarizer ensures students stay ahead in their academic journey and can focus more on the application of knowledge rather than spending time watching lengthy videos.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-img-container">
+          <img src="photos/Professional.png" alt="Professor" class="feature-img">
+        </div>
+        <h3>For Professors</h3>
+        <p>Professors and educators can benefit greatly from Video Summarizer by using it to quickly summarize lecture videos or online resources. This tool allows them to create concise content summaries, helping students absorb the essential points in a fraction of the time. Professors can focus more on discussions and deepening understanding in class, rather than spending time reviewing long videos. By incorporating summarized content into their lessons, professors can improve the efficiency of teaching, ensuring their students grasp key concepts quickly and effectively, enhancing the overall learning experience for everyone involved.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-img-container">
+          <img src="photos/Researchers.png" alt="Researcher" class="feature-img">
+        </div>
+        <h3>For Researchers</h3>
+        <p>Researchers can use Video Summarizer to quickly digest the vast amount of video content available in their field. By providing a concise summary of videos, researchers can save time by identifying key insights and findings without watching the entire video. Whether it's conference presentations, webinars, or academic research, this tool helps researchers stay updated on the latest developments, streamline their research process, and focus on gathering the most relevant information. It aids in staying on top of current trends, ensuring they don't miss out on crucial content that can inform their work and research papers.</p>
+      </div>
+    </section>
+
+    <!-- User Reviews Section -->
+<section class="user-reviews-section">
+  <h2>User Reviews</h2>
+  <div class="reviews-container">
+    <div class="review-card">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"Excellent for summarizing YouTube videos. Helps me study faster!"</p>
+      <span class="tag">Momin Mohammed Rehan<br>Student</span>
+    </div>
+    <div class="review-card">
+      <div class="stars">⭐⭐⭐⭐</div>
+      <p>"This tool saved me so much time! I can now quickly review videos for my research."</p>
+      <span class="tag">Umer Khan<br>Student</span>
+    </div>
+    <div class="review-card">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>"Great service! It made video analysis for my project so much easier."</p>
+      <span class="tag">Mujtaba Quadri<br>Student</span>
+    </div>
+    <div class="review-card">
+      <div class="stars">⭐⭐⭐⭐⭐⭐</div>
+      <p>"Great service! It made video analysis for my project so much easier."</p>
+      <span class="tag"> Hanzla Ahmed <br>Student</span>
+    </div>
+    <!-- Add more review cards as needed -->
+  </div>
+</section>
+
+    
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <h1>Video Summarizer</h1>
+        <p>Your go-to tool for quick and accurate video summaries.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>Email: <a href="mailto:support@videosummarizer.com">support@videosummarizer.com</a></li>
+          <li>Phone: +123-456-7890</li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <ul class="social-links">
+          <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+          <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Video Summarizer. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
