@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Summarization Platform</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .navbar .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .navbar .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-links a:hover {
+      color: #007bff;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      background: linear-gradient(to right, #007bff, #0056b3);
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0 0 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 0 0 30px;
+    }
+
+    .hero .cta {
+      background-color: #fff;
+      color: #007bff;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero .cta:hover {
+      background-color: #e9ecef;
+    }
+
+    /* Section Styles */
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .section .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      flex: 1 1 calc(33.333% - 40px);
+      max-width: calc(33.333% - 40px);
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+
+    .section .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .section .card h3 {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+
+    .section .card p {
+      font-size: 1rem;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">VidSummarize</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Login</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Summarize Videos in Seconds</h1>
+    <p>Quickly get the gist of any video with our AI-powered tool.</p>
+    <a href="#features" class="cta">Learn More</a>
+  </div>
+
+  <!-- Features Section -->
+  <div class="section" id="features">
+    <h2>Key Features</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Automatic Summaries</h3>
+        <p>Generate concise summaries for long videos effortlessly.</p>
+      </div>
+      <div class="card">
+        <h3>Multi-Language Support</h3>
+        <p>Summarize videos in multiple languages with high accuracy.</p>
+      </div>
+      <div class="card">
+        <h3>Save and Share</h3>
+        <p>Save your summaries and share them with others instantly.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works Section -->
+  <div class="section">
+    <h2>How It Works</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>1. Upload Video</h3>
+        <p>Drag and drop your video or provide a link to start.</p>
+      </div>
+      <div class="card">
+        <h3>2. Analyze</h3>
+        <p>Let our AI analyze the content and generate a summary.</p>
+      </div>
+      <div class="card">
+        <h3>3. Download</h3>
+        <p>Download your summary in text or PDF format.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2024 VidSummarize. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
