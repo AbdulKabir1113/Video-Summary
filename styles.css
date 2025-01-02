@@ -17,12 +17,16 @@ body {
 header {
   background-color: #333;
   padding: 10px 20px;
+  position: fixed;
+  width: 100%;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 10%;
+
 }
 
 .nav-left, .nav-right {
@@ -60,6 +64,7 @@ nav {
 .intro-section h2 {
   font-size: 32px;
   margin-bottom: 15px;
+  margin: -30px 0;
 }
 
 .intro-section p {
@@ -114,13 +119,19 @@ nav {
 .summary-box, .transcript-box {
   width: 40%;
   padding: 20px;
+  max-height:500px;
+  overflow-y:scroll;
   background-color: #fff;
   border: 1px solid #ddd;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
+#summary,#transcribed{
+  content:'';
+  text-align:justify;
+  line-height:25px;
+}
 /* Loader style */
 .loader {
   display: block;
@@ -131,6 +142,7 @@ nav {
   border-top: 5px solid #ffdd00;
   border-radius: 50%;
   animation: spin 1s linear infinite;
+  z-index:4;
 }
 
 @keyframes spin {
@@ -138,6 +150,36 @@ nav {
   100% { transform: rotate(360deg); }
 }
 
+.frames_from_video{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+    gap: 20px; /* Space between images */
+    justify-items: center; /* Center the images in their grid cells */
+    padding: 20px;
+}
+.frames_from_video #generated_images{
+    gap:10px;
+    max-width:700px;
+    display:flex;
+    flex-direction:row;
+    overflow-x:scroll;
+}
+
+/* Styling for each image */
+.frames_from_video img {
+    padding:5px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Ensures the image fills the box without distortion */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better aesthetics */
+    transition: transform 0.3s ease; /* Optional: Add a hover effect */
+}
+
+/* Hover effect for images */
+.frames_from_video img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
 
 /* Features Section Styling */
 .features-section {
